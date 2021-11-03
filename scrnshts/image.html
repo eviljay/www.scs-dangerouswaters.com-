@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>[SCS:DW -- Screenshot Viewer]       </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<!-- should work with Netscape 4.x-->
+<link rel="stylesheet" href="../dwcss.css" type="text/css" media="screen" />
+<style type="text/css" media="all">@import "../dwcss.css";</style>
+
+<script type="text/javascript" src="tooltip.js"></script>
+</head>
+<body bgcolor="#000000" marginwidth="0" marginheight="0" hspace="0" vspace="0" leftmargin="0" topmargin="0">
+<div align="center"><img src="001.jpg" name="myimage"></div>
+
+<div align="center">
+<form>
+    <table width="90%" height="44" border="1" align="center" cellpadding="4" cellspacing="0" bordercolorlight="#336699" bordercolordark="#193250">
+      <tr>
+        <td width="50%" height="29" align="left" valign="middle"> 
+          &nbsp;&nbsp;<input type="button" value="  <<  " onClick='changeImage(-1);'>&nbsp;&nbsp;
+          <span class="textTitle"> PREVIOUS </span></td>
+        <td width="50%" align="right" valign="middle"><span class="textTitle"> NEXT </span> 
+          &nbsp;&nbsp;<input type="button" value="  >>  " onClick='changeImage(1);'>&nbsp;&nbsp;</td>
+      </tr>
+    </table>
+</form>
+</div>
+</html>
+
+<script language="JavaScript"><!--
+which_image_loaded = 0;
+NUMBER_OF_IMAGES = 27;
+
+ImageNames = new Object();
+ImageNames.length = NUMBER_OF_IMAGES - 1;
+
+for (counter = 0; counter < NUMBER_OF_IMAGES; counter++){
+    file_number = counter + 1;
+    if (file_number < 10) {
+    	filename = ("00" + file_number + ".jpg");
+    }
+    else if (file_number > 99) {
+        filename = (file_number + ".jpg");
+    }
+    else {
+    	filename = ("0" + file_number + ".jpg");
+    }
+    ImageNames[counter] = filename;
+}
+
+var param = "image=";
+var paramIndex = 0;
+
+// Retrieve the screen that was selected, so the PREV and NEXT button refer to the correct screenshots
+if((paramIndex = window.location.search.indexOf(param)) > -1) {
+   document.myimage.src = window.location.search.substring(paramIndex + param.length) + ".jpg";
+   which_image_loaded = parseInt(window.location.search.substring(paramIndex + param.length), 10);
+   which_image_loaded--;   //it needs the index into the array
+}
+else {
+    document.myimage.src = ImageNames[0];
+    which_image_loaded = 0;
+}
+
+// Cycle through the screenshots according to NUMBER_OF_IMAGES
+function changeImage(direction) {
+    which_image_loaded += direction;
+    if (which_image_loaded < 0)
+        which_image_loaded = NUMBER_OF_IMAGES - 1;
+    if (which_image_loaded == NUMBER_OF_IMAGES)
+        which_image_loaded = 0;
+    if (document.images)
+        document.myimage.src = ImageNames[which_image_loaded];
+}
+//--></script>

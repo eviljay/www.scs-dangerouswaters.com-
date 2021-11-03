@@ -1,0 +1,225 @@
+body { scrollbar-arrow-color: #CCCCCC; scrollbar-3dlight-color: #111111; scrollbar-highlight-color: #666666; scrollbar-face-color: #444444; scrollbar-shadow-color: #191919; scrollbar-track-color: #111111; scrollbar-darkshadow-color: #191919}
+
+A.navbold:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #FFFFFF; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-DECORATION: none
+}
+A.navbold:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffcc; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-DECORATION: none
+}
+A.navbold:hover {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: underline;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+
+}
+
+.textTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #6699FF;
+}
+
+.textTitle:link {
+	font-weight: bold;
+	font-variant: underline;
+	color: #6699FF;
+}
+
+.textTitle2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #66CCFF;
+}
+
+.textTitle2:link {
+	font-weight: bold;
+	font-variant: underline;
+	color: #99CCFF;
+}
+
+.textTitle2:visited {
+	font-weight: bold;
+	font-variant: underline;
+	color: #99CCFF;
+}
+
+.textTitle2:hover {
+	font-weight: bolder;
+	color: #FFFFFF
+}
+
+.textTitle3 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #FFFFFF;
+}
+
+.textbody {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #CCCCCC;
+}
+
+.textbody:link {
+	line-height: bolder;
+	font-variant: underline;
+	color: #99CCFF;
+}
+
+.textbody:hover {
+	color: #FFFFFF;
+}	
+	
+.textbody:visited {
+	color: #99CCFF;
+}
+
+.textbodyBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #FFFFFF;
+}
+
+.navbar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #FFFFFF;
+	text-transform: none;
+	text-decoration: none;
+	line-height: none;
+}
+
+.navbar:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.navbar:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.navbar:hover {
+	font-weight: bolder;
+	color: #99CCFF;
+	TEXT-DECORATION: underline;
+}
+
+.navbar2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #6699FF;
+	text-transform: none;
+	text-decoration: none;
+	line-height: none;
+}
+
+.navbar2:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #6699FF;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.navbar2:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #6699FF;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.navbar2:hover {
+	font-weight: bold;
+	color: #99CCFF;
+	TEXT-DECORATION: underline;
+}
+
+.SectionTitleCopy {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bolder;
+	font-variant: normal;
+	color: #6699FF;
+}
+.StationList {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #99CCFF;
+}
+
+
+.tip {
+	font: 9px Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #000000; 
+	width:300px; 
+      	padding:1px; 
+      	position:absolute; 
+      	z-index:100; 
+      	visibility:hidden; 
+      	color:#99CCFF;
+      	top:20px; 
+      	left:91px; 
+      	background-color:#333333; 
+      	layer-background-color:#003366;
+}
+.legal {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #999999;
+}
